@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MV Automotiva</title>
+
+    <meta name="description"
+        content="MV Automotiva em Curitiba: martelinho de ouro, pintura, polimento e estética automotiva. Avaliação por foto e orçamento rápido." />
+    <meta name="keywords"
+        content="martelinho de ouro curitiba, polimento curitiba, pintura automotiva curitiba, estética automotiva curitiba" />
+    <meta name="author" content="MV Automotiva" />
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/favicon.svg" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="MV Automotiva - Martelinho, Pintura e Polimento em Curitiba" />
+    <meta property="og:description"
+        content="Avaliação por foto e orçamento rápido no WhatsApp. Atendimento com agendamento e acabamento premium." />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="styles.css?v=3" />
+</head>
+
+<body>
+
+    <header class="topo">
+        <div class="container header-row">
+            <div class="logo">
+                <span class="logo-mv">MV</span>
+                <div class="logo-text">
+                    <span class="logo-auto">AUTOMOTIVA</span>
+                    <span class="logo-line"></span>
+                </div>
+            </div>
+
+            <!--   botão do menu (aparece só no mobile via CSS) 
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="menu" id="menu">
+                 cabeçalho do menu no mobile 
+                <div class="menu-head">
+                    <div class="menu-brand">
+                        <span class="logo-mv">MV</span><span class="logo-auto">Automotiva</span>
+                    </div>
+                    <button class="menu-close" id="menuClose" aria-label="Fechar menu">✕</button>
+                </div>
+
+                <a href="#servicos">Serviços</a>
+                <a href="#galeria">Antes e Depois</a>
+                <a href="#sobre">Sobre</a>
+               /<a href="#contato">Contato</a> -->
+
+            <!-- botão do WhatsApp (aparece só no mobile) -->
+            <a class="btn-wpp mobile-only" id="wppTopoMobile"
+                href="https://wa.me/5541998737999?text=Olá,%20vim%20pelo%20site%20da%20MV%20Automotiva%20e%20gostaria%20de%20um%20orçamento."
+                target="_blank" rel="noopener">
+                Orçamento no WhatsApp
+            </a>
+            </nav>
+
+            <!-- botão do topo (aparece só no desktop) -->
+            <a class="btn-wpp btn-wpp-icon desktop-only" id="wppTopo"
+                href="https://wa.me/5541998737999?text=Olá,%20vim%20pelo%20site%20da%20MV%20Automotiva%20e%20gostaria%20de%20um%20orçamento."
+                target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+
+                <svg viewBox="0 0 32 32" width="20" height="20" fill="currentColor">
+                    <path
+                        d="M19.11 17.36c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.58-1.5-1.85-.16-.27-.02-.41.12-.55.13-.13.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.48-.84-2.03-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29 0 1.34.99 2.64 1.12 2.82.14.18 1.94 2.96 4.7 4.15.66.29 1.18.46 1.58.59.66.21 1.26.18 1.74.11.53-.08 1.6-.65 1.82-1.28.23-.63.23-1.17.16-1.28-.07-.11-.25-.18-.52-.32z" />
+                    <path
+                        d="M16.01 3.2c-7.07 0-12.8 5.73-12.8 12.8 0 2.26.59 4.47 1.71 6.41L3.2 28.8l6.53-1.71c1.86 1.02 3.95 1.56 6.08 1.56h.01c7.07 0 12.8-5.73 12.8-12.8S23.08 3.2 16.01 3.2zm0 23.3h-.01c-1.92 0-3.8-.52-5.45-1.5l-.39-.23-3.87 1.02 1.03-3.77-.25-.39c-1.03-1.64-1.58-3.54-1.58-5.49 0-5.78 4.71-10.49 10.5-10.49 5.78 0 10.49 4.71 10.49 10.49 0 5.79-4.71 10.5-10.49 10.5z" />
+                </svg>
+
+            </a>
+        </div>
+    </header>
+
+    <!-- overlay do menu (mobile) -->
+    <div class="menu-overlay" id="menuOverlay" hidden></div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-grid">
+
+            <div class="hero-texto">
+                <p class="tag">Martelinho • Pintura • Polimento • Estética Automotiva</p>
+
+                <h1>Seu carro renovado com acabamento premium.</h1>
+
+                <div class="hero-trust">
+                    <span class="dot">•</span>
+                    <span>+900 carros</span>
+                    <span class="dot">•</span>
+                    <span>Curitiba</span>
+                </div>
+
+                <div class="social-proof">
+                    <div class="sp-item">Clientes satisfeitos todos os dias</div>
+                    <div class="sp-item">Avaliações reais no WhatsApp</div>
+                    <div class="sp-item">Resultado visível na hora</div>
+                </div>
+
+                <div class="botoes">
+                    <a class="btn-principal" id="wppHero"
+                        href="https://wa.me/5541998737999?text=Olá,%20vim%20pelo%20site%20da%20MV%20Automotiva%20e%20gostaria%20de%20um%20orçamento."
+                        target="_blank" rel="noopener">
+                        Enviar fotos e pedir orçamento
+                    </a>
+                    <a class="btn-sec" href="#servicos">Ver serviços</a>
+                </div>
+
+                <div class="infos">
+                    <div class="info">
+                        <strong>⚡ Rápido</strong>
+                        <span>serviços ágeis</span>
+                    </div>
+                    <div class="info">
+                        <strong>🛡️ Garantia</strong>
+                        <span>no serviço</span>
+                    </div>
+                    <div class="info">
+                        <strong>📍 Região</strong>
+                        <span>Curitiba</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-proof">
+                <div class="proof-top">
+                    <div class="stars">★★★★★</div>
+                    <div class="rating">4.9 de 5</div>
+                    <div class="based">baseado em clientes reais</div>
+                </div>
+
+                <div class="proof-list">
+                    <div class="proof-item">✔ + de 5 anos de experiência</div>
+                    <div class="proof-item">✔ + de 900 carros atendidos</div>
+                    <div class="proof-item">✔ Atendimento em Curitiba</div>
+                    <div class="proof-item">✔ Agendamento rápido</div>
+                </div>
+
+                <a class="btn-principal btn-full"
+                    href="https://wa.me/5541998737999?text=Olá,%20vim%20pelo%20site%20da%20MV%20Automotiva%20e%20gostaria%20de%20um%20orçamento."
+                    target="_blank" rel="noopener">
+                    Pedir orçamento agora
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="servicos" class="sec">
+        <div class="container">
+            <h2>Serviços</h2>
+            <p class="sec-sub">Escolha o que você precisa. Se tiver dúvida, chama no WhatsApp.</p>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Martelinho de Ouro</h3>
+                    <p>Remoção de amassados sem pintura (quando aplicável).</p>
+                </div>
+                <div class="card">
+                    <h3>Pintura</h3>
+                    <p>Peças, retoques e pintura com acabamento fino.</p>
+                </div>
+                <div class="card">
+                    <h3>Polimento Técnico</h3>
+                    <p>Revitalização da pintura e brilho profundo.</p>
+                </div>
+                <div class="card">
+                    <h3>Vitrificação</h3>
+                    <p>Proteção durável contra sol, chuva e manchas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="sec sec-alt">
+        <div class="container">
+            <h2>Antes e Depois</h2>
+            <p class="sec-sub">Resultados reais. Clique em uma imagem para ampliar.</p>
+
+            <div class="galeria galeria-uma">
+                <button class="foto" data-img="assets/img/1.jpg" aria-label="Abrir imagem 1">
+                    <img src="assets/img/1.jpg" alt="Antes e depois 1" loading="lazy"
+                        onerror="this.classList.add('img-missing');">
+                </button>
+                <!-- <button class="foto" data-img="assets/img/2.jpg" aria-label="Abrir imagem 2">
+                    <img src="assets/img/2.jpg" alt="Antes e depois 2" loading="lazy"
+                        onerror="this.classList.add('img-missing');">
+                </button>
+                <button class="foto" data-img="assets/img/3.jpg" aria-label="Abrir imagem 3">
+                    <img src="assets/img/3.jpg" alt="Antes e depois 3" loading="lazy"
+                        onerror="this.classList.add('img-missing');">
+                </button>
+                <button class="foto" data-img="assets/img/4.jpg" aria-label="Abrir imagem 4">
+                    <img src="assets/img/4.jpg" alt="Antes e depois 4" loading="lazy"
+                        onerror="this.classList.add('img-missing');">
+                </button>
+                <button class="foto" data-img="assets/img/5.jpg" aria-label="Abrir imagem 5">
+                    <img src="assets/img/5.jpg" alt="Antes e depois 5" loading="lazy"
+                        onerror="this.classList.add('img-missing');">
+                </button>
+                <button class="foto" data-img="assets/img/6.jpg" aria-label="Abrir imagem 6">
+                    <img src="assets/img/6.jpg" alt="Antes e depois 6" loading="lazy"
+                        onerror="this.classList.add('img-missing');">
+                </button>-->
+            </div>
+        </div>
+    </section>
+
+    <!-- modal -->
+    <div class="modal" id="modal" aria-hidden="true">
+        <div class="modal__bg" id="modalBg"></div>
+        <div class="modal__box" role="dialog" aria-modal="true">
+            <button class="modal__close" id="modalClose" aria-label="Fechar">✕</button>
+
+            <button class="modal__nav modal__prev" id="modalPrev" aria-label="Imagem anterior">‹</button>
+            <button class="modal__nav modal__next" id="modalNext" aria-label="Próxima imagem">›</button>
+
+            <img id="modalImg" src="" alt="Imagem ampliada">
+        </div>
+    </div>
+
+    <section id="faq" class="sec">
+        <div class="container">
+            <h2>Perguntas frequentes</h2>
+            <p class="sec-sub">Respostas rápidas pra você tirar dúvidas antes de chamar.</p>
+
+            <div class="faq">
+                <details class="faq-item">
+                    <summary>Martelinho de ouro sempre dispensa pintura?</summary>
+                    <p>Depende do dano e se a tinta não foi quebrada. A gente avalia por foto e confirma
+                        presencialmente.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Quanto tempo demora?</summary>
+                    <p>Serviços rápidos podem sair no mesmo dia. Em casos maiores, passamos o prazo no orçamento.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Posso mandar fotos pra orçamento?</summary>
+                    <p>Sim. Envie 2–3 fotos, diga o modelo do carro e a região. Respondemos o mais rápido possível.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Tem garantia?</summary>
+                    <p>Sim, informamos as condições de garantia conforme o serviço realizado.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <section id="avaliacoes" class="sec sec-alt">
+        <div class="container">
+            <div class="reviews-head">
+                <div>
+                    <h2>Avaliações</h2>
+                    <p class="sec-sub">Confiança de clientes reais. Atendimento rápido e acabamento premium.</p>
+                </div>
+
+                <div class="reviews-score">
+                    <div class="reviews-stars">★★★★★</div>
+                    <div class="reviews-note">
+                        <strong>4.9</strong>
+                        <span>/5</span>
+                    </div>
+                </div>
+            </div>
+           <!-- <div class="reviews-cta">
+                <a class="btn-sec" target="_blank" rel="noopener"
+                    href="https://wa.me/5541998737999?text=Olá,%20vim%20pelo%20site%20da%20MV%20Automotiva%20e%20gostaria%20de%20ver%20algumas%20avaliações%20e%20fazer%20um%20orçamento.">
+                    Ver avaliações no WhatsApp
+                </a>
+            </div>-->
+
+
+            <div class="avaliacoes">
+                <div class="av">
+                    <div class="av-top">
+                        <span class="av-nome">Viviane</span>
+                        <span class="av-stars">★★★★★</span>
+                    </div>
+                    <p class="av-texto">Serviço rápido e ficou perfeito. Atendimento top!</p>
+                </div>
+
+                <div class="av">
+                    <div class="av-top">
+                        <span class="av-nome">Matheus</span>
+                        <span class="av-stars">★★★★★</span>
+                    </div>
+                    <p class="av-texto">Martelinho sem pintura, nem parece que tinha amassado. Recomendo!</p>
+                </div>
+
+                <div class="av">
+                    <div class="av-top">
+                        <span class="av-nome">Mario</span>
+                        <span class="av-stars">★★★★★</span>
+                    </div>
+                    <p class="av-texto">Capricho no acabamento e transparência no orçamento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="sec">
+        <div class="container">
+            <h2>Sobre</h2>
+            <p class="sec-sub">
+                Somos especialistas em estética automotiva, com mais de 15 anos de experiência em martelinho de ouro, lataria e pintura.
+Nosso atendimento é diferenciado: realizamos serviços a domicílio, trazendo praticidade para você — em muitos casos o reparo é feito na hora, sem precisar deixar ou levar o carro até a oficina.
+
+Trabalhamos com foco total em acabamento, transparência e cuidado, tratando cada veículo como se fosse nosso.
+            </p>
+        </div>
+    </section>
+
+    <!-- NOVA SEÇÃO: COMO FUNCIONA -->
+    <section class="sec">
+        <div class="container">
+            <h2>Como funciona o orçamento</h2>
+            <p class="sec-sub">Rápido e sem enrolação. Em poucos minutos você já tem uma estimativa.</p>
+
+            <div class="how-grid">
+                <div class="how-card">
+                    <div class="how-top">
+                        <span class="how-badge">1</span>
+                        <strong>Envie 2–3 fotos</strong>
+                    </div>
+                    <p>Mostre o dano, o carro e a região. Se puder, mande de perto e de longe.</p>
+                </div>
+
+                <div class="how-card">
+                    <div class="how-top">
+                        <span class="how-badge">2</span>
+                        <strong>Avaliamos e passamos a estimativa</strong>
+                    </div>
+                    <p>Respondemos rápido no WhatsApp com valor e prazo aproximados.</p>
+                </div>
+
+                <div class="how-card">
+                    <div class="how-top">
+                        <span class="how-badge">3</span>
+                        <strong>Agendamos o serviço</strong>
+                    </div>
+                    <p>Você escolhe o melhor horário. Serviço com acabamento premium.</p>
+                </div>
+            </div>
+
+            <div class="how-cta">
+                <a class="btn-principal" target="_blank" rel="noopener"
+                    href="https://wa.me/5541998737999?text=Olá,%20vim%20pelo%20site%20da%20MV%20Automotiva%20e%20gostaria%20de%20um%20orçamento.%20Vou%20enviar%20as%20fotos%20agora.">
+                    Pedir orçamento no WhatsApp
+                </a>
+                <span class="how-note">Dica: fotos com boa luz ajudam a avaliar melhor.</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="sec sec-alt">
+        <div class="container">
+            <h2>Contato</h2>
+            <p class="sec-sub">Localização, horário e redes. Atendimento com agendamento.</p>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="cc-ico">📍</div>
+                    <div class="cc-txt">
+                        <strong>Endereço</strong>
+                        <span>Curitiba – PR</span>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="cc-ico">🕒</div>
+                    <div class="cc-txt">
+                        <strong>Horário</strong>
+                        <span>Seg–Sáb • 08h–18h</span>
+                    </div>
+                </div>
+
+                <a class="contact-card link" href="https://instagram.com/" target="_blank" rel="noopener">
+                    <div class="cc-ico">📸</div>
+                    <div class="cc-txt">
+                        <strong>Instagram</strong>
+                        <span>@mvautomotiva</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="map-wrap">
+                <iframe title="Mapa MV Automotiva" src="https://www.google.com/maps?q=Curitiba%20PR&output=embed"
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div class="container">
+            <small>© <span id="ano"></span> MV Automotiva • Todos os direitos reservados.</small>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5541998737999?text=Olá,%20vim%20pelo%20site%20da%20MV%20Automotiva%20e%20gostaria%20de%20um%20orçamento."
+        class="wpp-float" target="_blank" aria-label="Chamar no WhatsApp">
+        💬
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
