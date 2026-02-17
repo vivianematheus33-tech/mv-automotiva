@@ -1025,3 +1025,15 @@ h2{
         max-height: 420px;
     }
 }
+.logo{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  text-decoration:none;
+}
+
+.logo-img{
+  height:56px;   /* ajusta aqui se quiser maior/menor */
+  width:auto;
+  display:block;
+}
